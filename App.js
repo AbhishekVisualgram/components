@@ -6,6 +6,7 @@ import './styles.css';
 import './App.css';
 import RegistrationForm from './SignUp';
 import SignInPage from './SignIn';
+import HomePage from './homePage';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path='/SignUp/*' element={<RegistrationForm />} />
             {/* Redirect any manual entry of /Usermanage to the landing page */}
             <Route path='/Usermanage/*' element={<Navigate to='/' />} />
+            <Route path="/homePage" element={<HomePage />} />
           </Routes>
         </div>
       </div>
